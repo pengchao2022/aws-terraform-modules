@@ -1,7 +1,7 @@
 resource "aws_s3_bucket" "main" {
   bucket = var.bucket_name
   tags = var.tags
-  force_destroy = true # allow force destroy
+  force_destroy = var.enable_force_destroy
   
 }
 
